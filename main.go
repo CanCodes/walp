@@ -111,7 +111,7 @@ func GetAndSetWallpaper(desc *systray.MenuItem) {
 
 	/*
 		Downloading the wallpaper because the wallpaper library saves all the wallpapers
-		we setFromURL in the same name, which apperantly doesn't really work as intended
+		we setFromURL in the same name, which apparently doesn't really work as intended
 		with macOS when changing the wallpaper multiple times.
 	*/
 	path, err := saveWallpaper(rand.Intn(100), randomWallpaper.URL)
